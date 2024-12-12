@@ -2,33 +2,89 @@
 #Euro   -> 89.16 Indian Rupee
 #Pound  -> 108.34 Indian Rupee
 #Kuwaiti Dinar -> 275.93 Indian Rupee 
-print('""""""""""""""""""""""""""""""""""')
-print("WELLCOME TO THE CURRENCY CONVERTER")
-print('""""""""""""""""""""""""""""""""""')
-print("Select : 1  for Dollar to Rupee\n")
+from unittest import case
+def invalid():
+    print("   ||||||||||||||||||||||||||||||||||||||||||||||||||")
+    print("   ||| Envalid Number!!","Please Select Correct     |||")
+    print("   ||||||||||||||||||||||||||||||||||||||||||||||||||")
 
-print("Select : 2  for Euro to Rupee\n")
-print("Select : 3  for Pound\n")
-print("Select : 4  for Kuwaiti Dinar\n")
-print("Select : 5  for Exist ")
+# print('||||||||||||||||||||||||||||||||||||||||||||||')
+# print("||||   WELLCOME TO THE CURRENCY CONVERTER |||| ")
+# print('||||||||||||||||||||||||||||||||||||||||||||||')
+
+def welcome():
+    print('||||||||||||||||||||||||||||||||||||||||||||||')
+    print("||||   WELLCOME TO THE CURRENCY CONVERTER |||| ")
+    print('||||||||||||||||||||||||||||||||||||||||||||||')
+
+welcome()   
+print("\n    Select : 1  for Dollar to Rupee\n")
+print("    Select : 2  for Euro to Rupee\n")
+print("    Select : 3  for Pound to Rupee\n")
+print("    Select : 4  for Kuwaiti Dinar to Rupee\n")
+print("    Select : 5  for Exist \n")
 #dollar
 def dollar():
-    dol=int(input("Enter the value :"))
+    print(        "||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
+    print(        "||||                                                                ||||")
+    dol=int(input("||||                    Enter How Many Dollar you have :            ||||"))
     Dollar=84.88
-    print(Dollar*dol)
+    print(        "||||                                                                ||||")
+    print(        "||||                         ", Dollar*dol," Rupee" ,"                     ||||")
+    print(        "||||                                                                ||||")
+    print(        "||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
 #Euro
 def euro():
-    eur=int(input("Enter the value :"))
+    print(        "||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
+    print(        "||||                                                                ||||")
+    eur=int(input("||||                Enter How Many Euro you have : "))
     Euro=89.16
-    print(Euro*eur)
+    print(        "||||                                                                ||||")
+    print("||||                ",Euro*eur," Rupee")
+    print(        "||||                                                                ||||")
+    print(        "||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
 #pound
 def pound():
-    pou=int(input("Enter the value :"))
+    print(        "||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
+    print(        "||||                                                                ||||")
+    pou=int(input("||||                 Enter How Many Pound you have : "))
     Pound=108.34
-    print(Pound*pou)
+    print(        "||||                                                                ||||")
+    print("||||                     ",Pound*pou," Rupee")
+    print(        "||||                                                                ||||")
+    print(        "||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
 #Kuwaiti Dinar
 def Kuwaiti_Dinar():
-    kud=int(input("Enter the value :"))
+    print(        "||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
+    print(        "||||                                                                ||||")
+    kud=int(input("||||          Enter How Many Kuwaiti Dinar you have : "))
     Kuwaiti_Dinar=275.93
-    print(Kuwaiti_Dinar*kud)
+    print(        "||||                                                                ||||")
+    print("||||                  ",Kuwaiti_Dinar*kud," Rupee")
+    print(        "||||                                                                ||||")
+    print(        "||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||||")
 
+print('"""""""""""""""""""""""""""""""""""""""""""""""""""""""""')
+x = int(input("  (((((((((((((((((*****SELECT*****))))))))))))))  => "))
+print('"""""""""""""""""""""""""""""""""""""""""""""""""""""""""')
+# match = x:
+# # if x is 0
+#     case 1:
+#         dollar()
+#     case 2:
+#         euro()
+#     case 3:
+#         pound()
+#     case 4:
+#         Kuwaiti_Dinar()
+if x<5:
+    if x==1:
+       dollar()
+    elif x==2:
+        euro()
+    elif x==3:
+        pound()
+    elif x==4:
+        Kuwaiti_Dinar()
+else:
+    invalid()
